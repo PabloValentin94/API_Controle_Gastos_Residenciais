@@ -2,6 +2,10 @@
 
 Desenvolvimento de uma API de suporte para um sistema que permite que pessoas possam gerenciar suas transações monetárias.
 
+## Onde encontrar o Aplicativo
+
+[Clique aqui](https://github.com/PabloValentin94/App_Controle_Gastos_Residenciais) para abrir o repositório do aplicativo deste projeto. Leia o README do aplicativo para compreender seu funcionamento.
+
 ## Funcionalidades (Aplicação C#)
 
 - Cadastro de pessoas (Inserção, deleção e listagem.);
@@ -9,12 +13,6 @@ Desenvolvimento de uma API de suporte para um sistema que permite que pessoas po
 - Cadastro de transações (Inserção e listagem.);
 
 - Consulta/Listagem de gastos totais separados por tipos (Total de despesas, total de receitas e saldo total.).
-
-## Estrutura - Banco de Dados
-
-- Tabela Pessoa: id, nome e idade;
-
-- Tabela Transacao: id, descricao, valor, tipo e id da pessoa (Criador da transação.).
 
 ## Consulta de Totais de Gastos
 
@@ -25,6 +23,18 @@ A API retornará um JSON contendo a listagem de todas as pessoas e seus gastos. 
 - Total de receitas de cada pessoa;
 
 - Saldo total de cada pessoa (Receitas - despesas.).
+
+## Estrutura - Banco de Dados
+
+- Tabela Pessoa: id, nome e idade;
+
+- Tabela Transacao: id, descricao, valor, tipo e id da pessoa (Criador da transação.).
+
+## Como Rodar o Banco de Dados da API
+
+- Abra algum SGBD (MySQL Workbench, SQLyog, etc.) e execute o arquivo **"DDL.sql"**, localizado na pasta **"Database"**;
+
+- Se necessário, altere os parâmetros de conexão com o banco de dados localizados no arquivo **"Config.php"**, dentro da pasta **"Api"**.
 
 ## Como Executar a API
 
@@ -51,12 +61,6 @@ Development Server (http://0.0.0.0:8000) started
 ```
 
 Tenha em mente que para o funcionamento correto, é preciso possuir o PHP instalado na máquina e ter o caminho até seu executável declarado no **PATH** das variáveis de ambiente do sistema operacional. A API não funcionará se for executada em uma pasta que não seja a especificada anteriormente.
-
-## Como Rodar o Banco de Dados da API
-
-- Abra algum SGBD (MySQL Workbench, SQLyog, etc.) e execute o arquivo **"DDL.sql"**, localizado na pasta **"Database"**;
-
-- Se necessário, altere os parâmetros de conexão com o banco de dados localizados no arquivo **"Config.php"**, dentro da pasta **"Api"**.
 
 ## Tutoriais - PHP (Fonte: [Tiago A. Silva](https://www.youtube.com/@prof.tiagotas))
 
